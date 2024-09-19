@@ -13,7 +13,7 @@ export default function Home() {
                   <div className="ml-10 flex items-baseline space-x-4">
                     <Link
                       href="/image-src"
-                      className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                      className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                       aria-current="page"
                     >
                       이미지 접근 방식
@@ -25,10 +25,10 @@ export default function Home() {
                       img vs ImageComponent
                     </Link>
                     <Link
-                      href="#"
+                      href="/image-sizes"
                       className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                     >
-                      Projects
+                      next/image-sizes
                     </Link>
                     <Link
                       href="#"
@@ -63,10 +63,10 @@ export default function Home() {
                 img vs ImageComponent
               </a>
               <a
-                href="#"
+                href="/image-sizes"
                 className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
               >
-                Projects
+                next/image-sizes
               </a>
               <a
                 href="#"

@@ -10,9 +10,11 @@ const config: Config = {
     extend: {
       width: {
         '300px': '300px',
+        '1000px': '1000px',
       },
       height: {
         '300px': '300px',
+        '1000px': '1000px',
       },
       colors: {
         background: 'var(--background)',
