@@ -1,6 +1,6 @@
 'use client';
 
-import exampleImage from '@/app/assets/images/src_example_item.png';
+import exampleImage from '@/assets/images/src_example_item.png';
 import Image from 'next/image';
 
 const ImageDifferentPage = () => {
@@ -8,12 +8,14 @@ const ImageDifferentPage = () => {
     <>
       <div className="w-screen h-auto flex flex-col items-center">
         <h1 className=" mt-8 mb-10 text-4xl font-bold">img vs next/image</h1>
+
         <div className="mb-4  text-center flex flex-col items-center ">
           <h3 className="font-semibold">img 태그</h3>
           <div>
             <img src={exampleImage.src} alt="public 디렉토리 이미지" width={500} height={500} />
           </div>
         </div>
+
         <div className="mb-4  text-center flex flex-col items-center ">
           <h3 className="font-semibold">next/image</h3>
           <Image

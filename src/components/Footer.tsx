@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import React from 'react';
 
-export default function Home() {
+const Footer = () => {
   return (
     <>
       <div className="min-h-full">
@@ -86,4 +87,6 @@ export default function Home() {
       </div>
     </>
   );
-}
+};
+
+export default Footer;

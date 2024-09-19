@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import Citizen from '@/app/assets/images/src_example_item_2.avif';
-import Mafia from '@/app/assets/images/src_example_item_4.avif';
+import Citizen from '@/assets/images/src_example_item_2.avif';
+import Mafia from '@/assets/images/src_example_item_4.avif';
 
 const SizesPage = () => {
   return (
