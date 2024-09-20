@@ -50,8 +50,20 @@ const ImageApiPage = () => {
           두 번째 사진
         </button>
       </div>
+      {/* 1. loader 속성 활용할 경우 next/image 최적화 기능이 적용되지 않는 걸 확인할 수 있다. */}
       <ImageTile content="loader 속성 활용">
-        <Image src="cld-sample" alt="외부 API 디렉토리 이미지" width="700" height="380" loader={imageLoader} />
+        <Image src="cld-sample" alt="외부 API 디렉토리 이미지" width="500" height="380" loader={imageLoader} />
+      </ImageTile>
+      <ImageTile content="blur 활용">
+        <Image
+          src="https://res.cloudinary.com/doqevri4w/image/upload/v1724160199/samples/landscapes/landscape-panorama.jpg"
+          alt="외부 API 디렉토리 이미지"
+          width="1000"
+          height="500"
+          placeholder="blur"
+          blurDataURL=""
+          // loader={imageLoader}
+        />
       </ImageTile>
     </>
   );
