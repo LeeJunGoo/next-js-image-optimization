@@ -2,14 +2,22 @@
 
 import { getPlaiceholder } from 'plaiceholder';
 
-const getBlurImg = async (imgSrc: string) => {
+const getBlurImg = async (src: string) => {
   try {
-    console.log('image', imgSrc);
-    const buffer = await fetch(imgSrc).then(async (res) => Buffer.from(await res.arrayBuffer()));
-    const { base64 } = await getPlaiceholder(buffer, { size: 10 });
-    return base64;
+    const buffer = await fetch(src).then(async (res) => Buffer.from(await res.arrayBuffer()));
+
+    const {
+      metadata: { height, width, format },
+      ...plaiceholder
+    } = await getPlaiceholder(buffer, { size: 10 });
+
+    return {
+      ...plaiceholder,
+      img: { src, height, width, format },
+    };
   } catch (e) {
     console.log(e);
+    return undefined;
   }
 };
 

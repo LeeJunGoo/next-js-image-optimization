@@ -2,6 +2,7 @@ import withPlaiceholder from '@plaiceholder/next';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: false,
   images: {
     remotePatterns: [
       {
@@ -15,7 +16,5 @@ const nextConfig = {
     // imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
 };
-
-// export default nextConfig;
 
 export default withPlaiceholder(nextConfig);
