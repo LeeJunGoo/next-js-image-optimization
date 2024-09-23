@@ -16,7 +16,7 @@ const PropsImagePage = () => {
       </ImageTile>
       <ImageTile content="외부 API 파일 접근">
         <img
-          src="https://res.cloudinary.com/doqevri4w/image/upload/v1724160206/cld-sample-5.jpg"
+          src="https://res.cloudinary.com/doqevri4w/image/upload/v1724160206/cld-sample-3.jpg"
           alt="외부 API 디렉토리 이미지"
           width="380"
           height="380"

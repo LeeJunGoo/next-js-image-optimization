@@ -12,12 +12,6 @@ const SizesPage = () => {
       <ImageTile content="고정 이미지의 srcset">
         <Image src={Citizen} width={300} height={300} alt="고정 이미지" />
       </ImageTile>
-      <ImageTile content="고정 이미지의 srcset">
-        <Image src={Citizen} width={300} height={300} alt="고정 이미지" />
-      </ImageTile>
-      <ImageTile content="고정 이미지의 srcset">
-        <Image src={Citizen} width={300} height={300} alt="고정 이미지" />
-      </ImageTile>
       <div className="mb-4 w-full max-w-md text-center flex flex-col items-center">
         <h3 className="font-semibold">반응형 이미지의 srcset</h3>
         <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[400px]">

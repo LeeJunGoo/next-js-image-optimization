@@ -4,9 +4,7 @@ import ImgWithLoader from '@/components/ImgWithLoader';
 import ImgWithPlaceholder from '@/components/ImgWithPlaceholder';
 import Title from '@/components/Title';
 
-const ImageApiPage = async () => {
-  console.log('실행');
-
+const ImageApiPage = () => {
   return (
     <>
       <Title title="외부 API 이미지 처리"></Title>

@@ -10,12 +10,12 @@ const ImageDifferentPage = () => {
     <>
       <Title title="img vs next/image" />
       <ImageTile content="img 태그">
-        <img src={exampleImage.src} alt="img 태그 활용" width={500} height={500} />
+        <img src={exampleImage.src} alt="img 태그 활용" width={450} height={500} />
       </ImageTile>
       <ImageTile content="next/image">
         <Image
           src={exampleImage}
-          width={500} // 원본 이미지의 가로 크기
+          width={450} // 원본 이미지의 가로 크기
           height={500} // 원본 이미지의 세로 크기
           alt="Image 컴포넌트 활용"
           placeholder="blur"
